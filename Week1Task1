@@ -1,13 +1,16 @@
 
 
+//print function
 function print(value){
     console.log(value);
 }
 
+//declaring variables
 var numList = [5,3,7];
 var x = 14;
-
 var Largestnum = Math.max.apply(null,numList);
+
+//function
 if(x>Largestnum){
     numList.push(x);
 }
