@@ -1,0 +1,19 @@
+//print function
+function print(value){
+    console.log(value);
+}
+
+
+//variables
+var numList = [5,3,7];
+var x = 1;
+var Largestnum = Math.min.apply(null,numList);
+
+//function
+if(x<Largestnum){
+    numList.push(x);
+}
+
+print(numList)
+
+
