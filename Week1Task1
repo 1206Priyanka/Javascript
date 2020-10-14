@@ -1,0 +1,17 @@
+
+
+function print(value){
+    console.log(value);
+}
+
+var numList = [5,3,7];
+var x = 14;
+
+var Largestnum = Math.max.apply(null,numList);
+if(x>Largestnum){
+    numList.push(x);
+}
+
+print(numList)
+
+
