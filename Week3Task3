@@ -1,0 +1,40 @@
+/fuction defining the class person
+fucntion person (name, gender);{
+
+    this.name = name;
+    this.gender = gender;
+    this.string = toString;
+}
+
+//toString function
+function toString(){
+    return this.name + " " + this.gender; 
+}
+
+
+//list of people
+var list [
+    new person ("adam", "male"),
+    new person ("Bob", "male"),
+    new person ("Casper", "male"),
+    new person ("Diane", "female"),
+    new person ("elle", "female"),
+    new person ("Fiona", "female"),
+    new person ("Georgie", "female"),
+    new person ("harry", "male"),
+    new person ("Isha", "female"),
+    new person ("jamal", "male")
+]
+
+
+//filter for female
+var filterFemale = list.filter(el=>{
+    return el.gender == "female"
+}) ;
+
+
+//for loop to print all female names
+for (var i = 0; i< filterFemale.length;++i){
+
+    console.log(filterFemale[i].name);
+}
