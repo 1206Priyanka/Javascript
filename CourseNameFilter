@@ -1,0 +1,28 @@
+function courseModule (name, code, startDate, endDate, courseName, students);{
+
+this.name = name
+this.code = code;
+this.startDate = startDate;
+this.endDate = endDate;
+this.courseName = courseName;
+this.students = students;
+}
+
+
+var ComputerScience = new courseModule("Mobile Web App Development", "ComSci", "01/10/2020", "01/06/2021", "Computer Science", ["Abby", "Bob", "Caren"]);
+var FineArt  = new courseModule("Visual Art", "FIArt","01/01/2021", "01/07/2021", "Fine Art", ["Dave", "elle", "Fiona"]);
+var Maths  = new courseModule("Statistics", "Mths", "05/09/2020", "03/06/2021", "Maths", ["George","Harry","Issy"]);
+var Lan  = new courseModule("German", "Lan", "12/09/2020", "12/06/2021", "Languages", ["Jack", "Kamal", "Lilly"]);
+var Politics = new courseModule("International Relations", "Pol", "03/10/2020", "03/05/2021", "Politics",["Maggie", "Noah", "Owen"]);
+
+
+var courseArray = [ComputerScience, FineArt, Maths, Lan, Politics];
+
+
+var findCourseName = courseArray.filter((i) => {
+    return i.courseName == "Maths";
+});
+
+
+
+
